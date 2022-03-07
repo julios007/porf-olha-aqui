@@ -10,10 +10,9 @@ var ball;
 var ground;
 var paredin;
 var bloco;
-function preload()
-{
+
 	
-}
+
 
 function setup() {
 	createCanvas(800, 700);
@@ -43,8 +42,8 @@ ball = Bodies.circle(100,10,20,ball_options);
 	  ground = Bodies.rectangle(200,390,400,20,ground_options);
 	  World.add(world,ground);
 
-	  paredin = Bodies.rectangle(300,150,70,10,parede_options);
-	  World.add(world,parede);
+	  paredin = Bodies.rectangle(300,150,70,10,paredin_options);
+	  World.add(world,paredin);
 	  rectMode(CENTER);
 	  ellipseMode(RADIUS);
 	  bloco = Bodies.rectangle(200,200,70,70,bloco_options);
